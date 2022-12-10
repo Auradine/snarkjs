@@ -7,7 +7,40 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "snarkjs cli",
+            "name": "ptau 1st contrib",
+            "skipFiles": [],
+            "program": "cli.js",
+            "args": [
+                "powersoftau",
+                "contribute",
+                "pot12_0000.ptau",
+                "pot12_0001.ptau",
+                "--entropy=\"aaaaaaaa\"",
+                "--name=\"First contribution\"",
+                "-v"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ptau new",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "cli.js",
+            "args": [
+                "powersoftau",
+                "new",
+                "bn128",
+                "12",
+                "pot12_0000.ptau",
+                "-v"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "r1cs",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -17,7 +50,8 @@
                 "export",
                 "json",
                 "test/mycircuit/mycircuit.r1cs",
-                "test/mycircuit/mycircuit.r1cs.json"
+                "test/mycircuit/mycircuit.r1cs.json",
+                "-v"
             ]
         },
         {
