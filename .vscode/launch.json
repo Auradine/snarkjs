@@ -7,6 +7,35 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "zkey contribute",
+            "skipFiles": [],
+            "program": "cli.js",
+            "args": [
+                "zkey",
+                "contribute",
+                "mycircuit_0000.zkey",
+                "mycircuit_0001.zkey",
+                "--name=\"1st Contributor Name\"",
+                "-v"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "groth16 setup",
+            "skipFiles": [],
+            "program": "cli.js",
+            "args": [
+                "groth16",
+                "setup",
+                "test/mycircuit/mycircuit.r1cs",
+                "pot12_final.ptau",
+                "mycircuit_0000.zkey"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "ptau 1st contrib",
             "skipFiles": [],
             "program": "cli.js",
