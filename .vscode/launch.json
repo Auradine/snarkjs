@@ -15,7 +15,7 @@
                 "contribute",
                 "pot12_0000.ptau",
                 "pot12_0001.ptau",
-                "--entropy=\"aaaaaaaa\"",
+                "--entropy=\"11111111\"",
                 "--name=\"First contribution\"",
                 "-v"
             ]
@@ -53,14 +53,6 @@
                 "test/mycircuit/mycircuit.r1cs.json",
                 "-v"
             ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Mocha all tests",
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "cwd": "${workspaceRoot}",
-            "internalConsoleOptions": "openOnSessionStart"
         }
     ]
 }

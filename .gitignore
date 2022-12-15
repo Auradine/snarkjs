@@ -68,3 +68,5 @@ tmp
 .DS_Store
 stats.html
 *.ptau
+*.r1cs.json
+*.ptau.json
