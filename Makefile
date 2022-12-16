@@ -24,6 +24,7 @@ ptau:
 
 phase2:
 	snarkjs groth16 setup test/mycircuit/mycircuit.r1cs pot12_final.ptau mycircuit_0000.zkey
+	snarkjs zkey export json mycircuit_0000.zkey mycircuit_0000.zkey.json
 	snarkjs zkey contribute mycircuit_0000.zkey mycircuit_0001.zkey --name="1st Contributor Name" -v
 	snarkjs zkey verify test/mycircuit/mycircuit.r1cs pot12_final.ptau mycircuit_0001.zkey
 	snarkjs zkey export json mycircuit_0001.zkey mycircuit_0001.zkey.json
