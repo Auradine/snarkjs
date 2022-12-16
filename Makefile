@@ -6,10 +6,8 @@ circom:
 	snarkjs r1cs print test/mycircuit/mycircuit.r1cs
 	snarkjs r1cs info test/mycircuit/mycircuit.r1cs
 
-witness: circom
-	node test/mycircuit/mycircuit_js/generate_witness.js test/mycircuit/mycircuit_js/mycircuit.wasm test/mycircuit/input.json witness.wtns
-
-compile: witness
+# witness: circom
+# 	node mycircuit_js/generate_witness.js mycircuit_js/mycircuit.wasm input.json ../../witness.wtns
 
 snarkjs: ptau phase2 proof verify
 
