@@ -36,6 +36,21 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "ptau prepare phase2",
+            "skipFiles": [],
+            "program": "cli.js",
+            "args": [
+                "powersoftau",
+                "prepare",
+                "phase2",
+                "pot12_0001.ptau",
+                "pot12_final.ptau",
+                "-v"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "ptau 1st contrib",
             "skipFiles": [],
             "program": "cli.js",
@@ -60,8 +75,8 @@
             "args": [
                 "powersoftau",
                 "new",
-                "bn128",
-                "12",
+                "bls12381",
+                "2",
                 "pot12_0000.ptau",
                 "-v"
             ]

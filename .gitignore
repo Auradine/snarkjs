@@ -70,3 +70,7 @@ stats.html
 *.ptau
 *.r1cs.json
 *.ptau.json
+test/mycircuit/mycircuit_cpp/*
+test/mycircuit/mycircuit_js/*
+*.zkey
+*.zkey.json
