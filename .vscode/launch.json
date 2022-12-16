@@ -7,6 +7,35 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "groth16 verify",
+            "skipFiles": [],
+            "program": "cli.js",
+            "args": [
+                "groth16",
+                "verify",
+                "verification_key.json",
+                "public.json",
+                "proof.json"
+            ]
+        },        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "groth16 prove",
+            "skipFiles": [],
+            "program": "cli.js",
+            "args": [
+                "groth16",
+                "prove",
+                "mycircuit_0001.zkey",
+                "witness.wtns",
+                "proof.json",
+                "public.json"
+            ]
+        },        
+        {
+            "type": "node",
+            "request": "launch",
             "name": "zkey contribute",
             "skipFiles": [],
             "program": "cli.js",
