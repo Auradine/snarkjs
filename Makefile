@@ -18,7 +18,10 @@ ptau:
 #   [ERROR] snarkJS: This file has no contribution! It cannot be used in production
 
 	snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name="First contribution" -v
-	snarkjs powersoftau prepare phase2 pot12_0001.ptau pot12_final.ptau -v
+	snarkjs powersoftau contribute pot12_0001.ptau pot12_0002.ptau --name="Second contribution" -v
+	snarkjs powersoftau prepare phase2 pot12_0001.ptau pot12_0001_final.ptau -v
+	snarkjs powersoftau export json pot12_0001_final.ptau pot12_0001_final.ptau.json
+	snarkjs powersoftau prepare phase2 pot12_0002.ptau pot12_final.ptau -v
 	snarkjs powersoftau export json pot12_final.ptau pot12_final.ptau.json
 	snarkjs powersoftau verify pot12_final.ptau
 
