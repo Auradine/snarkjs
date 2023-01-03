@@ -7,6 +7,30 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Key Pair Test",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "${workspaceFolder}/test/keypar_test.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Full process",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "${workspaceFolder}/test/fullprocess.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "groth16 verify",
             "skipFiles": [],
             "program": "cli.js",
@@ -17,7 +41,7 @@
                 "public.json",
                 "proof.json"
             ]
-        },        
+        },
         {
             "type": "node",
             "request": "launch",
@@ -32,7 +56,7 @@
                 "proof.json",
                 "public.json"
             ]
-        },        
+        },
         {
             "type": "node",
             "request": "launch",
