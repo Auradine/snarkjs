@@ -2,7 +2,7 @@ all: compile
 
 circom:
 	circom -p bls12381 test/mycircuit/mycircuit.circom --r1cs --wasm --sym --c -o test/mycircuit
-	snarkjs r1cs export json test/mycircuit/mycircuit.r1cs mycircuit.r1cs.json
+	snarkjs r1cs export json test/mycircuit/mycircuit.r1cs test/mycircuit/mycircuit.r1cs.json
 	snarkjs r1cs print test/mycircuit/mycircuit.r1cs
 	snarkjs r1cs info test/mycircuit/mycircuit.r1cs
 
