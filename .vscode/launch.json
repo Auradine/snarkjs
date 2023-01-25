@@ -89,6 +89,21 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "ptau export json",
+            "skipFiles": [],
+            "program": "cli.js",
+            "args": [
+                "powersoftau",
+                "export",
+                "json",
+                "pot12_final.ptau",
+                "pot12_final.ptau.json",
+                "-v"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "ptau prepare phase2",
             "skipFiles": [],
             "program": "cli.js",
